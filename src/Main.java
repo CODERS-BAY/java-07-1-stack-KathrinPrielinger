@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main (String[] args) {
+        public static void main (String[] args) {
 
         //Klasse aufrufen
         IntStack stack = new IntStack();

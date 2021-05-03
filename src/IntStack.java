@@ -37,6 +37,8 @@ public class IntStack {
     //gibt die letzten n Elemente des Stacks zurück und entfernt diese vom Stack
     public int[] pop(int n) {
         List<Integer> toReturn = new ArrayList<>();
+        if (n>elements.size())
+            throw new StackTooSmallException();
         //Zählt vom Stapel von oben so viele runter, wie ich angebe (n)
         for (int i = 0; i < n; i++) {
             toReturn.add(pop());
